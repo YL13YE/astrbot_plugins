@@ -1,0 +1,26 @@
+{
+    "analysis_prob": {
+        "description": "对普通消息进行情感分析的概率",
+        "type": "float",
+        "hint": "范围：0-1",
+        "default": 0.01
+    },
+    "at_analysis_prob": {
+        "description": "对回复@消息进行情感分析的概率",
+        "type": "float",
+        "hint": "范围：0-1",
+        "default": 0.1
+    },
+    "special_id_list": {
+        "description": "特殊id列表，重启不丢失",
+        "type": "list",
+        "hint": "自动维护，无需手动填写",
+        "default": []
+    },
+    "only_list_mode": {
+        "description": "仅对列表中的用户生效（true: 只对列表用户，false: 全局概率）",
+        "type": "bool",
+        "hint": "true=只对列表用户，false=全局概率分析",
+        "default": true
+    }
+}
